@@ -69,7 +69,7 @@ window.addEventListener("load", function () {
   script.src = loaderUrl;
   script.onload = () => {
     createUnityInstance(canvas, config, (progress) => {
-      progressBarFull.style.width = 100 * progress + "%";
+      //progressBarFull.style.width = 100 * progress + "%";
     }).then((unityInstance) => {
       unityInstanceRef = unityInstance;
       loadingBar.style.display = "none";
